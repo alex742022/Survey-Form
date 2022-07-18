@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+  }
+  h1{
+      font-weight: lighter;
+      text-align: center;
+      margin: 9
+    }
+    p#description{
+      font-style: italic;
+      text-align: center;
+      margin: 9;
+    }
+    body{
+      width: 100%;
+      height: 100vh;
+      margin: 0;
+      padding-top: 20px;
+      font-family: sans-serif;
+      color: white;
+      font-size: 18px;
+  
+    }
+    body::before{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-image: url(image/pexels-peter-olexa-4012966.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+    form {
+      background-color: rgba(27, 27, 50, .8);
+      padding : 20px;
+      width: 50%;
+      margin: auto;
+      border-radius: 5px;
+    }
+    label{
+      display: block;
+      margin-bottom: 8px;
+    }
+    input,select,textarea{
+      margin-bottom: 25px;
+      padding: 8px;
+      width: 100%;
+      background-color: white;
+      color: rgb(56, 60, 56);
+      font-size: 17px;
+    }
+    input,select{
+      border-radius: 5px;
+    }
+    input,select,textarea:focus {
+      outline-color: blue;
+    }
+    .inline {
+      margin: 0 10px 0 0;
+      height: 19px;
+      width: 19px;
+      vertical-align: middle;
+    }
+    .sure{
+      margin-bottom: 25px;
+    }
+    .additional{
+      margin-bottom: 25px;
+    }
+    .sub{
+      background-color: rgb(60,200,110);
+      border: none;
+      color: white;
+      margin-top: 10px;
+      height: 2.5em;
+      font-size: 17px;
+      width: 100%;
+    }
+    .error ,
+     .errorEmail, 
+     .errorAge, 
+     .errorDropdown, 
+     .errorRadio, 
+     .errorSelect, 
+     .errorCheckbox{
+      color: red;
+    }
+  
+  @media (max-width: 1024px){
+      form{
+        width: 50%;
+      }
+    }
+  
+  @media (max-width: 950px){
+      form{
+        width: 70%;
+      }
+    }
+  
+  @media (max-width: 770px){
+    form{
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 490px) {
+    h1#title{
+      font-size: 30px;
+    }
+    p#description{
+      font-size: 15px;
+    }
+    form{
+      width: 90%;
+      font-size: 16px;
+    }
+  }
